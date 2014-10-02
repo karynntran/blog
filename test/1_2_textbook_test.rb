@@ -4,6 +4,10 @@ require_relative '../lib/textbook'
 
 class TextbookTest < Minitest::Test
 
+  def setup
+    @textbook = Textbook.new
+  end
+
   def page_data
     {
      "header" => "The life of Pie",
